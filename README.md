@@ -79,21 +79,18 @@ Terraform provisions:
 
 ```bash
 COGNITO_POOL_ID="<your_pool_id>"
-REGION="<aws_region>"
 
 aws cognito-idp admin-create-user \
   --user-pool-id "$COGNITO_POOL_ID" \
   --username "you@example.com" \
   --message-action SUPPRESS \
-  --temporary-password "TempPassword123!" \
-  --region "$REGION"
+  --temporary-password "TempPassword123!"
 
 aws cognito-idp admin-set-user-password \
   --user-pool-id "$COGNITO_POOL_ID" \
   --username "you@example.com" \
   --password "YourPassword123!" \
-  --permanent \
-  --region "$REGION"
+  --permanent
 ```
 
 **Cognito User Successfully Created**
