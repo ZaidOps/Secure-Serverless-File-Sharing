@@ -187,21 +187,3 @@ Example DynamoDB record:
 | Auth | Cognito JWT validation |
 | API | HTTPS enforced, short-lived URLs |
 | Audit | Immutable log trail stored in DynamoDB |
-
----
-
-## 8. Contributing
-
-PRs welcome - ensure new features include security and audit logging.
-
----
-
-## 9. License
-
-MIT - see LICENSE.
-
----
-
-## 10. Support
-
-Open a GitHub issue for bugs, ideas, or improvements.
