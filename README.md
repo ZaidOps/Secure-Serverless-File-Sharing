@@ -204,3 +204,36 @@ Example DynamoDB record:
 | - [ ] | Improve structured logging and error handling |
 | - [ ] | Add optional analytics dashboard for file access history |
 | - [ ] | Add a short demo video and improve documentation |
+
+---
+
+## To-Do
+
+- [x] Deploy AWS infrastructure via Terraform
+- [x] Implement Cognito authentication and JWT flow
+- [x] Enable presigned URL generation for uploads/downloads
+- [x] Store audit logs in DynamoDB
+- [ ] Build frontend UI for authenticated file upload/download
+- [ ] Add file metadata listing endpoint (filename, size, timestamps)
+- [ ] Implement secure file-sharing logic with expiring share links
+- [ ] Add pagination + filtering in audit logs
+- [ ] Improve error handling and logging for production
+- [ ] Add automated tests (unit + integration)
+- [ ] Containerize local development environment
+
+---
+
+## 8. To-Do
+
+| Status | Task |
+|--------|------|
+| ⬜ | Build a frontend UI (React or Next.js) for file upload and download |
+| ⬜ | Store file metadata in DynamoDB (size, type, timestamps) and expose a list endpoint |
+| ⬜ | Add role-based access control (RBAC) for admin and standard users |
+| ⬜ | Add a secure file deletion endpoint with audit logging |
+| ⬜ | Configure S3 lifecycle policies to auto-expire or archive old files |
+| ⬜ | Add CI/CD pipeline using GitHub Actions for Terraform and Lambda deployments |
+| ⬜ | Implement rate limiting and throttling on API Gateway |
+| ⬜ | Improve structured logging and error handling for production readiness |
+| ⬜ | Add an analytics/dashboard view for file and access activity |
+| ⬜ | Add a short demo video and expand documentation for onboarding |
