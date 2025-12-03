@@ -175,15 +175,29 @@ Example DynamoDB record:
 
 ![Audit Log Authenticated](images/dynamodb_audit_log_authenticated.png)
 
-
 ---
 
 ## 7. Security Design Highlights
 
 | Layer | Security |
-|-------|----------|
+|---|---|
 | S3 | No public access, encryption enabled, versioning |
 | IAM | Strict least-privilege execution roles |
 | Auth | Cognito JWT validation |
 | API | HTTPS enforced, short-lived URLs |
 | Audit | Immutable log trail stored in DynamoDB |
+
+---
+
+## 8. To-Do
+
+- [ ] Build a frontend UI (React or Next.js) for file upload and download
+- [ ] Store file metadata in DynamoDB (size, type, timestamps) and expose a list endpoint
+- [ ] Add role-based access control (RBAC) for admin and standard users
+- [ ] Add a secure file deletion endpoint with audit logging
+- [ ] Configure S3 lifecycle policies to auto-expire or archive old files
+- [ ] Add CI/CD pipeline using GitHub Actions for Terraform and Lambda deployments
+- [ ] Implement rate limiting and throttling on API Gateway
+- [ ] Improve structured logging and error handling for production readiness
+- [ ] Add an analytics/dashboard view for file and access activity
+- [ ] Add a short demo video and expand documentation for onboarding
